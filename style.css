@@ -1,0 +1,265 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  font-size: 2rem;
+  background-color: var(--color-primary);
+  padding: 0.4rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li + li {
+  margin-left: 2rem; /* same as your gap */
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  /* background-color and color already set on base; repeat only if needed */
+  display: block; /* ensure transform/size behaves predictably */
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+
+  transition: transform 0.18s ease, background-color 0.18s ease;
+  transform-origin: center center;
+  will-change: transform, background-color; /* optional performance hint */
+  text-decoration: none;
+}
+
+/* hover + active — these will animate because transition exists on base */
+nav ul li a:hover,
+nav ul li a:active {
+  background-color: #2d297a;
+  transform: scale(1.1);
+}
+
+/* BANNER */
+
+section.banner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/mancleaning.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+section.banner img {
+}
+
+.banner_text {
+  color: #fff;
+  padding: 2rem 5rem;
+  background-color: rgba(36, 33, 100, 0.6);
+  text-align: center;
+}
+
+.banner_text h2 {
+  font-size: 3.8rem;
+  margin: 0;
+}
+
+.banner_text h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* Wrapper Container */
+
+.wrapper {
+  max-width: 1200px;
+
+  margin: 3rem auto;
+}
+
+.wrapper h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: var(--color-primary);
+}
+
+.box {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 2rem 4rem;
+}
+
+/* SERVICES */
+
+.services {
+  max-width: 120rem;
+  margin: 0 auto;
+  --gap: 20px; /* adjust spacing here */
+  padding: 20px 0;
+}
+
+.services .row {
+  display: flex;
+  justify-content: center; /* center the whole row inside the 1200px container */
+  gap: var(--gap);
+  margin-bottom: 24px;
+  width: 100%; /* important so calc(100%) inside service refers to 1200px */
+}
+
+.services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center image and text inside the card */
+  gap: 12px;
+  background: var(--color-primary);
+  padding: 16px;
+  border-radius: 12px;
+  min-height: 200px; /* keeps cards visually equal height */
+  text-align: center;
+  color: #fff;
+}
+
+.services .service h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+
+.read-more {
+  font-weight: bold;
+
+  display: inline-block;
+  background-color: #fff;
+  color: var(--color-primary);
+  padding: 0.3rem 1rem;
+  margin: 1rem;
+}
+
+.learn-more-wrapper {
+  text-align: center;
+}
+
+a.learn-more {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+/* Owning a Business */
+.owning-a-biz {
+  background-color: var(--color-primary);
+  padding: 2rem 0;
+}
+
+.owning-a-biz .wrapper {
+  display: flex;
+}
+
+.owning-a-biz h2 {
+  color: #fff;
+  text-align: left;
+}
+
+.owning-a-biz p {
+  color: #fff;
+}
+
+.biz-call {
+  display: inline-block;
+
+  color: var(--color-primary);
+  background-color: #fff;
+
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.biz-left {
+}
+
+a.biz-call {
+}
+
+.biz-right {
+}
+
+/* Personal One-on-One Training */
+
+.personal-training {
+  display: flex;
+  flex-direction: column;
+}
+
+.trainor {
+  display: flex;
+}
+
+.personal-training img {
+  margin: 0 3rem 0 0;
+  width: 15rem;
+}
+
+.meet {
+  display: inline-block;
+  font-weight: bold;
+
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+a.meet:hover {
+  color: #fff;
+}
+
+.awards {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  background-image: url(https://usmilitaryclean.com/wp-content/uploads/2023/06/awardbg6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 4rem 3rem;
+  color: #fff;
+}
+.awards h2 {
+  text-align: left;
+  color: #fff;
+}
+
+/* UTILS */
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin-top: 6rem;
+}
+
+/* Animation */
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
