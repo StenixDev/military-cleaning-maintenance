@@ -208,7 +208,7 @@ a.biz-call {
   width: 15rem;
 }
 
-.meet {
+a.meet {
   display: inline-block;
   font-weight: bold;
 
@@ -234,6 +234,66 @@ a.meet:hover {
 }
 .awards h2 {
   text-align: left;
+  color: #fff;
+}
+
+/* Testimonies */
+
+.testimonies {
+  display: flex;
+  gap: 1rem;
+}
+
+.testimony {
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.author img {
+  width: 7rem;
+  border-radius: 100%;
+}
+
+.testimony-msg {
+}
+
+/* Contact */
+
+.contact {
+  background-color: var(--color-primary);
+  padding: 2rem 0;
+}
+
+.contact-info {
+  display: flex;
+  gap: 2rem;
+}
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-right h2 {
+  color: #fff;
+  font-size: 3.8rem;
+}
+
+.contact-right a {
+  display: block;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+.contact-right span {
   color: #fff;
 }
 
