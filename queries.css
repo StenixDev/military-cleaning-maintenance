@@ -33,4 +33,88 @@
   .section {
     margin-top: 0;
   }
+
+  .services .service h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* 700px */
+
+@media (max-width: 43.75em) {
+  section.banner {
+    background-position: center center;
+  }
+
+  .banner_text h2 {
+    font-size: 2.8rem;
+  }
+
+  img.logo {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .banner_text {
+    width: 95%;
+  }
+  .services .row {
+    flex-direction: column;
+  }
+
+  .services img {
+    width: 40%;
+  }
+
+  .owning-a-biz .wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .owning-a-biz h2 {
+    text-align: center;
+  }
+
+  .biz-contact {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonies {
+    flex-direction: column;
+  }
+
+  .author {
+    justify-content: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact h2 {
+    font-size: 3rem;
+  }
+
+  .career-decision {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .decision-left {
+    order: 2;
+  }
+
+  .decision-right {
+    order: 1;
+  }
+
+  .decision-left h2 {
+    align-self: center;
+  }
+
+  .decision-left span {
+    text-align: center;
+  }
 }

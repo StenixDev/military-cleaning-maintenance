@@ -189,23 +189,21 @@ a.learn-more {
   color: #fff;
 }
 
-.biz-call {
+.biz-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+a.biz-call {
   display: inline-block;
+  width: 28rem;
+  text-align: center;
 
   color: var(--color-primary);
   background-color: #fff;
 
   padding: 1.5rem 2rem;
   margin-bottom: 1.5rem;
-}
-
-.biz-left {
-}
-
-a.biz-call {
-}
-
-.biz-right {
 }
 
 /* Personal One-on-One Training */
@@ -221,7 +219,7 @@ a.biz-call {
 
 .personal-training img {
   margin: 0 3rem 0 0;
-  width: 15rem;
+  width: 40%;
 }
 
 a.meet {
