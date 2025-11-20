@@ -70,7 +70,11 @@ section.banner {
   gap: 2rem;
 }
 
-section.banner img {
+img.logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 .banner_text {
