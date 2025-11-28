@@ -356,6 +356,29 @@ a.meet:hover {
   display: inline-block;
 }
 
+/* Single Page */
+
+.content {
+  margin-top: 6rem;
+  padding: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content img {
+  margin-bottom: 2rem;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.the-service img {
+  width: 15rem;
+}
+
 footer {
   text-align: center;
   background-color: var(--color-primary);
