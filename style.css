@@ -375,8 +375,25 @@ a.meet:hover {
   flex-direction: column;
 }
 
+.the-service {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
 .the-service img {
-  width: 15rem;
+  flex-shrink: 0; /* keep image size */
+  width: 150px; /* or whatever size you want */
+  height: auto;
+  align-self: center;
+}
+
+.the-service p {
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0; /* CRITICAL: allows text to wrap */
+  overflow-wrap: anywhere;
 }
 
 footer {
